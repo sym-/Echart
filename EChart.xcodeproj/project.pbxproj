@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		727A8AC418B5D4A2008E31F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727A8AC318B5D4A2008E31F3 /* Foundation.framework */; };
+		727A8AC618B5D4A2008E31F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727A8AC518B5D4A2008E31F3 /* CoreGraphics.framework */; };
+		727A8AC818B5D4A2008E31F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727A8AC718B5D4A2008E31F3 /* UIKit.framework */; };
+		727A8ACE18B5D4A2008E31F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 727A8ACC18B5D4A2008E31F3 /* InfoPlist.strings */; };
+		727A8AD018B5D4A2008E31F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A8ACF18B5D4A2008E31F3 /* main.m */; };
+		727A8AD418B5D4A2008E31F3 /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A8AD318B5D4A2008E31F3 /* BIDAppDelegate.m */; };
+		727A8AD718B5D4A2008E31F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727A8AD518B5D4A2008E31F3 /* Main.storyboard */; };
+		727A8ADC18B5D4A2008E31F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727A8ADB18B5D4A2008E31F3 /* Images.xcassets */; };
+		727A8AE318B5D4A2008E31F3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727A8AE218B5D4A2008E31F3 /* XCTest.framework */; };
+		727A8AE418B5D4A2008E31F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727A8AC318B5D4A2008E31F3 /* Foundation.framework */; };
+		727A8AE518B5D4A2008E31F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727A8AC718B5D4A2008E31F3 /* UIKit.framework */; };
+		727A8AED18B5D4A2008E31F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 727A8AEB18B5D4A2008E31F3 /* InfoPlist.strings */; };
+		727A8AEF18B5D4A2008E31F3 /* EChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A8AEE18B5D4A2008E31F3 /* EChartTests.m */; };
+		727A8AFA18B5D4EB008E31F3 /* EChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A8AF918B5D4EB008E31F3 /* EChartViewController.m */; };
+		727A8AFD18B5D505008E31F3 /* EChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A8AFC18B5D505008E31F3 /* EChartCell.m */; };
+		727A8B0318B5D616008E31F3 /* ELineChartDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A8B0018B5D616008E31F3 /* ELineChartDataModel.m */; };
+		727A8B0418B5D616008E31F3 /* ELine.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A8B0218B5D616008E31F3 /* ELine.m */; };
+		727A8B0718B5D62D008E31F3 /* ELineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A8B0618B5D62D008E31F3 /* ELineChart.m */; };
+		727A8B0A18B5D652008E31F3 /* EColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A8B0918B5D652008E31F3 /* EColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		727A8AE618B5D4A2008E31F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 727A8AB818B5D4A2008E31F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 727A8ABF18B5D4A2008E31F3;
+			remoteInfo = EChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		727A8AC018B5D4A2008E31F3 /* EChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		727A8AC318B5D4A2008E31F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		727A8AC518B5D4A2008E31F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		727A8AC718B5D4A2008E31F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		727A8ACB18B5D4A2008E31F3 /* EChart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EChart-Info.plist"; sourceTree = "<group>"; };
+		727A8ACD18B5D4A2008E31F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		727A8ACF18B5D4A2008E31F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		727A8AD118B5D4A2008E31F3 /* EChart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EChart-Prefix.pch"; sourceTree = "<group>"; };
+		727A8AD218B5D4A2008E31F3 /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		727A8AD318B5D4A2008E31F3 /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		727A8AD618B5D4A2008E31F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		727A8ADB18B5D4A2008E31F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		727A8AE118B5D4A2008E31F3 /* EChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		727A8AE218B5D4A2008E31F3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		727A8AEA18B5D4A2008E31F3 /* EChartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EChartTests-Info.plist"; sourceTree = "<group>"; };
+		727A8AEC18B5D4A2008E31F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		727A8AEE18B5D4A2008E31F3 /* EChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EChartTests.m; sourceTree = "<group>"; };
+		727A8AF818B5D4EB008E31F3 /* EChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EChartViewController.h; sourceTree = "<group>"; };
+		727A8AF918B5D4EB008E31F3 /* EChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EChartViewController.m; sourceTree = "<group>"; };
+		727A8AFB18B5D505008E31F3 /* EChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EChartCell.h; sourceTree = "<group>"; };
+		727A8AFC18B5D505008E31F3 /* EChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EChartCell.m; sourceTree = "<group>"; };
+		727A8AFF18B5D616008E31F3 /* ELineChartDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELineChartDataModel.h; sourceTree = "<group>"; };
+		727A8B0018B5D616008E31F3 /* ELineChartDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELineChartDataModel.m; sourceTree = "<group>"; };
+		727A8B0118B5D616008E31F3 /* ELine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELine.h; sourceTree = "<group>"; };
+		727A8B0218B5D616008E31F3 /* ELine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELine.m; sourceTree = "<group>"; };
+		727A8B0518B5D62D008E31F3 /* ELineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELineChart.h; sourceTree = "<group>"; };
+		727A8B0618B5D62D008E31F3 /* ELineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELineChart.m; sourceTree = "<group>"; };
+		727A8B0818B5D652008E31F3 /* EColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EColor.h; sourceTree = "<group>"; };
+		727A8B0918B5D652008E31F3 /* EColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EColor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		727A8ABD18B5D4A2008E31F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727A8AC618B5D4A2008E31F3 /* CoreGraphics.framework in Frameworks */,
+				727A8AC818B5D4A2008E31F3 /* UIKit.framework in Frameworks */,
+				727A8AC418B5D4A2008E31F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727A8ADE18B5D4A2008E31F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727A8AE318B5D4A2008E31F3 /* XCTest.framework in Frameworks */,
+				727A8AE518B5D4A2008E31F3 /* UIKit.framework in Frameworks */,
+				727A8AE418B5D4A2008E31F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		727A8AB718B5D4A2008E31F3 = {
+			isa = PBXGroup;
+			children = (
+				727A8AC918B5D4A2008E31F3 /* EChart */,
+				727A8AE818B5D4A2008E31F3 /* EChartTests */,
+				727A8AC218B5D4A2008E31F3 /* Frameworks */,
+				727A8AC118B5D4A2008E31F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		727A8AC118B5D4A2008E31F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				727A8AC018B5D4A2008E31F3 /* EChart.app */,
+				727A8AE118B5D4A2008E31F3 /* EChartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		727A8AC218B5D4A2008E31F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				727A8AC318B5D4A2008E31F3 /* Foundation.framework */,
+				727A8AC518B5D4A2008E31F3 /* CoreGraphics.framework */,
+				727A8AC718B5D4A2008E31F3 /* UIKit.framework */,
+				727A8AE218B5D4A2008E31F3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		727A8AC918B5D4A2008E31F3 /* EChart */ = {
+			isa = PBXGroup;
+			children = (
+				727A8AFE18B5D5FF008E31F3 /* import */,
+				727A8AD218B5D4A2008E31F3 /* BIDAppDelegate.h */,
+				727A8AD318B5D4A2008E31F3 /* BIDAppDelegate.m */,
+				727A8AD518B5D4A2008E31F3 /* Main.storyboard */,
+				727A8AF818B5D4EB008E31F3 /* EChartViewController.h */,
+				727A8AF918B5D4EB008E31F3 /* EChartViewController.m */,
+				727A8AFB18B5D505008E31F3 /* EChartCell.h */,
+				727A8AFC18B5D505008E31F3 /* EChartCell.m */,
+				727A8ADB18B5D4A2008E31F3 /* Images.xcassets */,
+				727A8ACA18B5D4A2008E31F3 /* Supporting Files */,
+			);
+			path = EChart;
+			sourceTree = "<group>";
+		};
+		727A8ACA18B5D4A2008E31F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				727A8ACB18B5D4A2008E31F3 /* EChart-Info.plist */,
+				727A8ACC18B5D4A2008E31F3 /* InfoPlist.strings */,
+				727A8ACF18B5D4A2008E31F3 /* main.m */,
+				727A8AD118B5D4A2008E31F3 /* EChart-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		727A8AE818B5D4A2008E31F3 /* EChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				727A8AEE18B5D4A2008E31F3 /* EChartTests.m */,
+				727A8AE918B5D4A2008E31F3 /* Supporting Files */,
+			);
+			path = EChartTests;
+			sourceTree = "<group>";
+		};
+		727A8AE918B5D4A2008E31F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				727A8AEA18B5D4A2008E31F3 /* EChartTests-Info.plist */,
+				727A8AEB18B5D4A2008E31F3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		727A8AFE18B5D5FF008E31F3 /* import */ = {
+			isa = PBXGroup;
+			children = (
+				727A8B0818B5D652008E31F3 /* EColor.h */,
+				727A8B0918B5D652008E31F3 /* EColor.m */,
+				727A8B0518B5D62D008E31F3 /* ELineChart.h */,
+				727A8B0618B5D62D008E31F3 /* ELineChart.m */,
+				727A8AFF18B5D616008E31F3 /* ELineChartDataModel.h */,
+				727A8B0018B5D616008E31F3 /* ELineChartDataModel.m */,
+				727A8B0118B5D616008E31F3 /* ELine.h */,
+				727A8B0218B5D616008E31F3 /* ELine.m */,
+			);
+			name = import;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		727A8ABF18B5D4A2008E31F3 /* EChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727A8AF218B5D4A2008E31F3 /* Build configuration list for PBXNativeTarget "EChart" */;
+			buildPhases = (
+				727A8ABC18B5D4A2008E31F3 /* Sources */,
+				727A8ABD18B5D4A2008E31F3 /* Frameworks */,
+				727A8ABE18B5D4A2008E31F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EChart;
+			productName = EChart;
+			productReference = 727A8AC018B5D4A2008E31F3 /* EChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		727A8AE018B5D4A2008E31F3 /* EChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727A8AF518B5D4A2008E31F3 /* Build configuration list for PBXNativeTarget "EChartTests" */;
+			buildPhases = (
+				727A8ADD18B5D4A2008E31F3 /* Sources */,
+				727A8ADE18B5D4A2008E31F3 /* Frameworks */,
+				727A8ADF18B5D4A2008E31F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				727A8AE718B5D4A2008E31F3 /* PBXTargetDependency */,
+			);
+			name = EChartTests;
+			productName = EChartTests;
+			productReference = 727A8AE118B5D4A2008E31F3 /* EChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		727A8AB818B5D4A2008E31F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BID;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = SYM;
+				TargetAttributes = {
+					727A8AE018B5D4A2008E31F3 = {
+						TestTargetID = 727A8ABF18B5D4A2008E31F3;
+					};
+				};
+			};
+			buildConfigurationList = 727A8ABB18B5D4A2008E31F3 /* Build configuration list for PBXProject "EChart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 727A8AB718B5D4A2008E31F3;
+			productRefGroup = 727A8AC118B5D4A2008E31F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				727A8ABF18B5D4A2008E31F3 /* EChart */,
+				727A8AE018B5D4A2008E31F3 /* EChartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		727A8ABE18B5D4A2008E31F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727A8ADC18B5D4A2008E31F3 /* Images.xcassets in Resources */,
+				727A8ACE18B5D4A2008E31F3 /* InfoPlist.strings in Resources */,
+				727A8AD718B5D4A2008E31F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727A8ADF18B5D4A2008E31F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727A8AED18B5D4A2008E31F3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		727A8ABC18B5D4A2008E31F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727A8AD418B5D4A2008E31F3 /* BIDAppDelegate.m in Sources */,
+				727A8AFA18B5D4EB008E31F3 /* EChartViewController.m in Sources */,
+				727A8B0718B5D62D008E31F3 /* ELineChart.m in Sources */,
+				727A8AFD18B5D505008E31F3 /* EChartCell.m in Sources */,
+				727A8B0418B5D616008E31F3 /* ELine.m in Sources */,
+				727A8AD018B5D4A2008E31F3 /* main.m in Sources */,
+				727A8B0318B5D616008E31F3 /* ELineChartDataModel.m in Sources */,
+				727A8B0A18B5D652008E31F3 /* EColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727A8ADD18B5D4A2008E31F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727A8AEF18B5D4A2008E31F3 /* EChartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		727A8AE718B5D4A2008E31F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 727A8ABF18B5D4A2008E31F3 /* EChart */;
+			targetProxy = 727A8AE618B5D4A2008E31F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		727A8ACC18B5D4A2008E31F3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				727A8ACD18B5D4A2008E31F3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		727A8AD518B5D4A2008E31F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				727A8AD618B5D4A2008E31F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		727A8AEB18B5D4A2008E31F3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				727A8AEC18B5D4A2008E31F3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		727A8AF018B5D4A2008E31F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		727A8AF118B5D4A2008E31F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		727A8AF318B5D4A2008E31F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EChart/EChart-Prefix.pch";
+				INFOPLIST_FILE = "EChart/EChart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		727A8AF418B5D4A2008E31F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EChart/EChart-Prefix.pch";
+				INFOPLIST_FILE = "EChart/EChart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		727A8AF618B5D4A2008E31F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EChart.app/EChart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EChart/EChart-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EChartTests/EChartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		727A8AF718B5D4A2008E31F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EChart.app/EChart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EChart/EChart-Prefix.pch";
+				INFOPLIST_FILE = "EChartTests/EChartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		727A8ABB18B5D4A2008E31F3 /* Build configuration list for PBXProject "EChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727A8AF018B5D4A2008E31F3 /* Debug */,
+				727A8AF118B5D4A2008E31F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		727A8AF218B5D4A2008E31F3 /* Build configuration list for PBXNativeTarget "EChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727A8AF318B5D4A2008E31F3 /* Debug */,
+				727A8AF418B5D4A2008E31F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		727A8AF518B5D4A2008E31F3 /* Build configuration list for PBXNativeTarget "EChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727A8AF618B5D4A2008E31F3 /* Debug */,
+				727A8AF718B5D4A2008E31F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 727A8AB818B5D4A2008E31F3 /* Project object */;
+}
